@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: cadetblue;
+}
+.container{
+    width: 25vw;
+    background-color: white;
+    padding: 20px;
+}
+input{
+    width: 80%;
+    height: 20%;
+    border: 1px solid black;
+    outline: 0;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+button{
+    height: 15%;
+    width: 40%;
+    background-color:cyan;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0 30% 0;
+}
+.qrImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 10px auto;
+}
+.shake{
+    animation: shake 0.1s linear 10 ;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media only screen and (max-width : 667px){
+    .container{
+        width: 80%;
+    }
+}
